@@ -26,7 +26,7 @@ jobs:
 
     # Run the POSTMAN COLLECTION
       - name: Run Tests
-        run: newman run PokemonApi.postman_collection.json -e PokemonApi.postman_environment.json -r cli, htmlextra --reporter-htmlextra-export testArtifacts/html.html
+        run: newman run "PokemonApi.postman_collection.json" -e "PokemonApi.postman_environment.json" -r cli, htmlextra --reporter-htmlextra-export testArtifacts/html.html
 
     # Upload the reports to TestArtifacts directory
       - name: Output the results
